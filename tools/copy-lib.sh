@@ -25,7 +25,7 @@ else
     # the Linux case...
     if [ -e ~/libs/obj/release/nativelibs/* ]; then
         mkdir -p $1
-        mv ~/libs/obj/release/nativelibs/* $1
+        cp ~/libs/obj/release/nativelibs/* $1
     else
         echo "++++++++++++++nativelibs not found!"
     fi
