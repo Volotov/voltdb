@@ -411,6 +411,9 @@ void JNITopend::crashVoltDB(FatalException e) {
 
 JNITopend::~JNITopend() {
     m_jniEnv->DeleteGlobalRef(m_javaExecutionEngine);
+    m_jniEnv->DeleteGlobalRef(m_exportManagerClass);
+    m_jniEnv->DeleteGlobalRef(m_partitionDRGatewayClass);
+    m_jniEnv->DeleteGlobalRef(m_encoderClass);
 }
 
 int64_t JNITopend::getQueuedExportBytes(int32_t partitionId, string signature) {
