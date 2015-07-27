@@ -229,9 +229,9 @@ int Table::getApproximateSizeToSerialize() const {
     return 1024 * 1024 * 10;
 }
 
-size_t Table::getSizeToSerializeWithoutTuples() const {
+size_t Table::getSizeToSerializeWithoutTuples(bool includeTotalSize) const {
     // table size
-    size_t bytes = sizeof(int32_t);
+    size_t bytes = includeTotalSize ? sizeof(int32_t) : 0;
 
     // use a cache if possible
     if (m_columnHeaderData) {
@@ -253,9 +253,9 @@ size_t Table::getSizeToSerializeWithoutTuples() const {
     return bytes;
 }
 
-size_t Table::getSizeToSerialize() {
+size_t Table::getSizeToSerialize(bool includeTotalSize) {
     // size without tuples
-    size_t bytes = getSizeToSerializeWithoutTuples();
+    size_t bytes = getSizeToSerializeWithoutTuples(includeTotalSize);
 
     // tuples
     bytes += sizeof(int32_t);  // tuple count

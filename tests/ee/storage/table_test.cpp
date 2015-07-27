@@ -163,7 +163,7 @@ TEST_F(TableTest, ValueTypes) {
 }
 
 TEST_F(TableTest, TableSerialize) {
-    size_t serializeSize = m_table->getSizeToSerialize();
+    size_t serializeSize = m_table->getSizeToSerialize(true);
     char* backingCharArray = new char[serializeSize];
     ReferenceSerializeOutput conflictSerializeOutput(backingCharArray, serializeSize);
     m_table->serializeTo(conflictSerializeOutput);
@@ -174,7 +174,7 @@ TEST_F(TableTest, TableSerialize) {
 }
 
 TEST_F(TableTest, TableSerializeWithoutTotalSize) {
-    size_t serializeSize = m_table->getSizeToSerialize() - 4; // no need for total size
+    size_t serializeSize = m_table->getSizeToSerialize(false);
     char* backingCharArray = new char[serializeSize];
     ReferenceSerializeOutput conflictSerializeOutput(backingCharArray, serializeSize);
     m_table->serializeToWithoutTotalSize(conflictSerializeOutput);

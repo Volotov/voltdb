@@ -500,7 +500,7 @@ int JNITopend::reportDRConflict(int32_t partitionId,
         jstring tableNameString = m_jniEnv->NewStringUTF(tableName.c_str());
 
         // prepare input buffer
-        size_t serializeSize = input->getSizeToSerialize() - sizeof(int32_t); // no need for total size
+        size_t serializeSize = input->getSizeToSerialize(false);
         char* backingCharArray = new char[serializeSize];
         ReferenceSerializeOutput conflictSerializeOutput(backingCharArray, serializeSize);
         input->serializeToWithoutTotalSize(conflictSerializeOutput);
@@ -514,8 +514,8 @@ int JNITopend::reportDRConflict(int32_t partitionId,
         }
 
         // prepare output buffer
-        // NOTE tuple count placeholder compensates for table size, both of int32_t
-        size_t outputSerializeSize = output->getSizeToSerializeWithoutTuples() +
+        size_t outputSerializeSize = output->getSizeToSerializeWithoutTuples(false) +
+                                     sizeof(int32_t) + // tuple count placeholder
                                      output->schema()->getMaxTupleSerializationSize();
         char* outputBackingCharArray = new char[outputSerializeSize];
         ReferenceSerializeOutput outputSerializeOutput(outputBackingCharArray, outputSerializeSize);
