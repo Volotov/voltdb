@@ -215,7 +215,7 @@ TEST_F(TupleSchemaTest, MaxTupleSerializationSize) {
     builder.setColumnAtIndex(2, VALUE_TYPE_TIMESTAMP);
     ScopedTupleSchema schema(builder.build());
 
-    EXPECT_EQ((4 + 16 + 64 * 4 + 8), schema.get()->getMaxTupleSerializationSize());
+    EXPECT_EQ((4 + 16 + (4 + 64 * 4) + 8), schema.get()->getMaxTupleSerializationSize());
 }
 
 int main() {

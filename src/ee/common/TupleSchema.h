@@ -344,6 +344,9 @@ inline size_t TupleSchema::getMaxTupleSerializationSize() const {
     for (int i = 0;i < m_columnCount; ++i) {
         const TupleSchema::ColumnInfo* columnInfo = getColumnInfoPrivate(i);
         int32_t factor = (columnInfo->type == VALUE_TYPE_VARCHAR && !columnInfo->inBytes) ? MAX_BYTES_PER_UTF8_CHARACTER : 1;
+        if (columnInfo->type == VALUE_TYPE_VARCHAR || columnInfo->type == VALUE_TYPE_VARBINARY) {
+            bytes += sizeof(int32_t); // value length placeholder for variable length columns
+        }
         bytes += columnInfo->length * factor;
     }
     return bytes;
