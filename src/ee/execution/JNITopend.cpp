@@ -498,7 +498,7 @@ void JNITopend::pushDRBuffer(int32_t partitionId, StreamBlock *block) {
 int JNITopend::reportDRConflict(int32_t partitionId,
             int64_t remoteSequenceNumber, int64_t remoteUniqueId,
             string tableName, Table* input, Table* output) {
-    if (input != NULL) {
+    if (input != NULL && output != NULL) {
         // prepare tablename
         jstring tableNameString = m_jniEnv->NewStringUTF(tableName.c_str());
 
