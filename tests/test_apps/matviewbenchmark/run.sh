@@ -97,9 +97,9 @@ function matviewbenchmark() {
         matviewbenchmark.MaterializedViewBenchmark \
         --displayinterval=5 \
         --servers=localhost \
-        --txn=10000000 \
+        --txn=2500000 \
         --warmup=100000 \
-        --group=5000
+        --group=1250
 }
 
 function help() {
