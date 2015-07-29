@@ -9,6 +9,7 @@ from fabric.utils import abort
 username='test'
 builddir = "/tmp/" + username + "Kits/buildtemp"
 version = "UNKNOWN"
+nativelibdir = "/libs/obj"  #  ~test/libs/... usually
 defaultlicensedays = 45 #default trial license length
 
 ################################################
@@ -226,6 +227,14 @@ def backupReleaseDir(releaseDir,archiveDir,version):
           % (archiveDir, version, timestamp, releaseDir))
 
 ################################################
+# REMOVE NATIVE LIBS FROM SHARED DIRECTORY
+################################################
+
+def rmNativeLibs():
+    local("echo rm -rf ~" + username + nativelibdir)
+    local("ls -l ~" + username + nativelibdir)
+
+################################################
 # GET THE GIT TAGS OR SHAS TO BUILD FROM
 ################################################
 
@@ -259,6 +268,8 @@ if len(sys.argv) == 3:
     rbmqExportTreeish = sys.argv[2]
     if voltdbTreeish != proTreeish:
         oneOff = True     #force oneoff when not same tag/branch
+
+rmNativeLibs()
 
 try:
     build_args = os.environ['VOLTDB_BUILD_ARGS']
@@ -378,6 +389,9 @@ except Exception as e:
     build_errors=True
 
 computeChecksums(releaseDir)
+
+rmNativeLibs()      # cleanup imported native libs so not picked up unexpectedly by other builds
+
 exit (build_errors)
 #archiveDir = os.path.join(os.getenv('HOME'), "releases", "archive", voltdbTreeish, versionCentos)
 #backupReleaseDir(releaseDir, archiveDir, versionCentos)
