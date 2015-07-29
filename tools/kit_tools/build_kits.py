@@ -231,7 +231,7 @@ def backupReleaseDir(releaseDir,archiveDir,version):
 ################################################
 
 def rmNativeLibs():
-    local("ls -l ~" + username + nativelibdir)
+    # local("ls -l ~" + username + nativelibdir)
     local("rm -rf ~" + username + nativelibdir)
 
 ################################################
