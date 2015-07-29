@@ -231,8 +231,8 @@ def backupReleaseDir(releaseDir,archiveDir,version):
 ################################################
 
 def rmNativeLibs():
-    local("echo rm -rf ~" + username + nativelibdir)
     local("ls -l ~" + username + nativelibdir)
+    local("rm -rf ~" + username + nativelibdir)
 
 ################################################
 # GET THE GIT TAGS OR SHAS TO BUILD FROM
