@@ -2091,6 +2091,9 @@ TEST CASES
     <property name="sqlcmdtest.dir" value="tests/sqlcmd"/>
     <echo message="Running from ${sqlcmdtest.dir}"/>
 
+    <!-- build the jar file used to test the load and remove commands -->
+    <exec dir='${sqlcmdtest.dir}' executable='/usr/bin/env'><arg line="bash build_jar.sh"/></exec>
+
     <condition property="user" value="${env.USER}" else="anonymous">
         <isset property="env.USER"/>
     </condition>
@@ -2101,7 +2104,7 @@ TEST CASES
         <isset property="reportpath"/>
     </condition>
 
-    <exec dir='${sqlcmdtest.dir}' executable='python2.6'>
+    <exec dir='${sqlcmdtest.dir}' executable='python2.6' failonerror="true">
         <arg value='sqlcmdtest.py' />
     </exec>
 </target>
@@ -2110,6 +2113,9 @@ TEST CASES
     <property name="sqlcmdtest.dir" value="tests/sqlcmd"/>
     <echo message="Running from ${sqlcmdtest.dir}"/>
 
+    <!-- build the jar file used to test the load and remove commands -->
+    <exec dir='${sqlcmdtest.dir}' executable='/usr/bin/env'><arg line="bash build_jar.sh"/></exec>
+
     <condition property="user" value="${env.USER}" else="anonymous">
         <isset property="env.USER"/>
     </condition>
@@ -2120,7 +2126,7 @@ TEST CASES
         <isset property="reportpath"/>
     </condition>
 
-    <exec dir='${sqlcmdtest.dir}' executable='python2.6'>
+    <exec dir='${sqlcmdtest.dir}' executable='python2.6' failonerror="true">
         <arg value='sqlcmdtest.py' />
         <arg value='--refresh' />
     </exec>
