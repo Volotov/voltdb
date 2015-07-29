@@ -162,7 +162,11 @@ CREATE VIEW id_4min (
   MIN(v3),
   MAX(v4)
 FROM idsWith4MinMatView GROUP BY group_id;
-CREATE INDEX idWith4MinMatView_idx ON idsWith4MinMatView (group_id);
+CREATE INDEX idWith4MinMatView_idx0 ON idsWith4MinMatView (group_id);
+CREATE INDEX idWith4MinMatView_idx1 ON idsWith4MinMatView (v1, group_id);
+CREATE INDEX idWith4MinMatView_idx2 ON idsWith4MinMatView (v2, group_id);
+CREATE INDEX idWith4MinMatView_idx3 ON idsWith4MinMatView (v3, group_id);
+CREATE INDEX idWith4MinMatView_idx4 ON idsWith4MinMatView (v4, group_id);
 
 CREATE VIEW id_4min_opt (
   group_id,
@@ -179,6 +183,7 @@ CREATE VIEW id_4min_opt (
   MIN(v3),
   MAX(v4)
 FROM idsWith4MinMatViewOpt GROUP BY group_id;
+CREATE INDEX idWith4MinMatViewOpt_idx0 ON idsWith4MinMatViewOpt (group_id);
 CREATE INDEX idWith4MinMatViewOpt_idx1 ON idsWith4MinMatViewOpt (group_id, v1);
 CREATE INDEX idWith4MinMatViewOpt_idx2 ON idsWith4MinMatViewOpt (group_id, v2);
 CREATE INDEX idWith4MinMatViewOpt_idx3 ON idsWith4MinMatViewOpt (group_id, v3);
