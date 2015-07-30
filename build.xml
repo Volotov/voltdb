@@ -650,16 +650,6 @@ DISTRIBUTION
         <isset property="os.mac"/>
     </condition>
 
-    <echo>++++ In nativelib copy section of prep_libvoltdb
-        jar.nativelib.dir is ${jar.nativelib.dir}
-        base.dir/voltdb: ${base.dir}/voltdb
-    </echo>
-
-    <exec dir='.' executable="/bin/ls" failonerror='false'>
-        <arg value='-l'/>
-        <arg value="${base.dir}/voltdb/"/>
-    </exec>
-
     <copy todir="${jar.nativelib.dir}">
         <fileset dir="${base.dir}/voltdb">
             <include name="libvoltdb*" />
