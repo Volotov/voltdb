@@ -11,6 +11,8 @@ if [ "$USER" != "test" ]; then
     exit 0
 fi
 
+/bin/env
+
 echo '$1 is' $1
 echo '$2 is' $2
 echo 'lib is' obj/release/nativelibs/libvoltdb*
