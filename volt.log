@@ -1,0 +1,371 @@
+2015-08-04 12:50:45,909   INFO  [main] CONSOLE: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+2015-08-04 12:50:45,920   INFO  [main] CONSOLE: Build: 5.4 voltdb-5.4-0-g4a2c380-local Enterprise Edition
+2015-08-04 12:50:45,921   INFO  [main] HOST: Command line arguments: org.voltdb.VoltDB create deployment deployment.xml host localhost:3021
+2015-08-04 12:50:45,925   INFO  [main] HOST: Command line JVM arguments: -Xmx2048m -Djava.awt.headless=true -Dsun.net.inetaddr.ttl=300 -Dsun.net.inetaddr.negative.ttl=3600 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:+UseTLAB -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCondCardMark -Dsun.rmi.dgc.server.gcInterval=9223372036854775807 -Dsun.rmi.dgc.client.gcInterval=9223372036854775807 -XX:CMSWaitDuration=120000 -XX:CMSMaxAbortablePrecleanTime=120000 -XX:+ExplicitGCInvokesConcurrent -XX:+CMSScavengeBeforeRemark -XX:+CMSClassUnloadingEnabled -XX:PermSize=64m -Dlog4j.configuration=file:///home/voltdb/voltdb-ent-5.4/voltdb/log4j.xml -Djava.library.path=dummyvalue
+2015-08-04 12:50:45,925   INFO  [main] HOST: Command line JVM classpath: /home/voltdb/voltdb-ent-5.4/voltdb/voltdb-5.4.jar:/home/voltdb/voltdb-ent-5.4/lib/protobuf-java-2.5.0.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-lang3-3.0.jar:/home/voltdb/voltdb-ent-5.4/lib/super-csv-2.1.0.jar:/home/voltdb/voltdb-ent-5.4/lib/avro-1.7.7.jar:/home/voltdb/voltdb-ent-5.4/lib/jsch-0.1.51.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-http-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-server-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/httpcore-4.3.2.jar:/home/voltdb/voltdb-ent-5.4/lib/metrics-core-2.2.0.jar:/home/voltdb/voltdb-ent-5.4/lib/httpcore-nio-4.3.2.jar:/home/voltdb/voltdb-ent-5.4/lib/groovy-all-2.1.7-indy.jar:/home/voltdb/voltdb-ent-5.4/lib/slf4j-nop-1.6.2.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-util-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/servlet-api-2.5.jar:/home/voltdb/voltdb-ent-5.4/lib/httpclient-4.3.2.jar:/home/voltdb/voltdb-ent-5.4/lib/snappy-java-1.1.0.1.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-cli-1.2.jar:/home/voltdb/voltdb-ent-5.4/lib/scala-library.jar:/home/voltdb/voltdb-ent-5.4/lib/felix.jar:/home/voltdb/voltdb-ent-5.4/lib/httpasyncclient-4.0.1.jar:/home/voltdb/voltdb-ent-5.4/lib/kafka_2.8.0-0.8.1.jar:/home/voltdb/voltdb-ent-5.4/lib/jackson-core-asl-1.9.13.jar:/home/voltdb/voltdb-ent-5.4/lib/log4j-1.2.16.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-io-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/jna.jar:/home/voltdb/voltdb-ent-5.4/lib/slf4j-api-1.6.2.jar:/home/voltdb/voltdb-ent-5.4/lib/tomcat-jdbc.jar:/home/voltdb/voltdb-ent-5.4/lib/jackson-mapper-asl-1.9.13.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-logging-1.1.3.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-continuation-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-codec-1.6.jar:/home/voltdb/voltdb-ent-5.4/lib/tomcat-juli.jar:/home/voltdb/voltdb-ent-5.4/lib/jline-2.10.jar:/home/voltdb/voltdb-ent-5.4/lib/extension/voltdb-rabbitmq.jar
+2015-08-04 12:50:45,941   INFO  [main] NETWORK: Default network thread count: 2
+2015-08-04 12:50:45,975   INFO  [main] HOST: Beginning inter-node communication on port 3021.
+2015-08-04 12:50:45,976   INFO  [main] HOST: Attempting to bind to leader ip localhost/127.0.0.1:3021
+2015-08-04 12:50:45,982   INFO  [main] CONSOLE: Connecting to VoltDB cluster as the leader...
+2015-08-04 12:50:46,073   INFO  [main] ZK-SERVER: binding to port /127.0.0.1:7181
+2015-08-04 12:50:46,112   INFO  [main] ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+2015-08-04 12:50:46,283   INFO  [main] ZK-SERVER: Initiating client connection, connectString=127.0.0.1:7181 sessionTimeout=2000 watcher=org.voltcore.zk.ZKUtil$1@2de9fae7
+2015-08-04 12:50:46,293   INFO  [main-SendThread()] ZK-CLIENT: Opening socket connection to server /127.0.0.1:7181
+2015-08-04 12:50:46,300   INFO  [NIOServerCxn.Factory:/127.0.0.1:7181] ZK-SERVER: Accepted socket connection from /127.0.0.1:60158
+2015-08-04 12:50:46,301   INFO  [main-SendThread(localhost:7181)] ZK-CLIENT: Socket connection established to localhost/127.0.0.1:7181, initiating session
+2015-08-04 12:50:46,306   INFO  [NIOServerCxn.Factory:/127.0.0.1:7181] ZK-SERVER: Client attempting to establish new session at /127.0.0.1:60158
+2015-08-04 12:50:46,324   INFO  [main-SendThread(localhost:7181)] ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:7181, sessionid = 0x1be30eecd1000000, negotiated timeout = 6000
+2015-08-04 12:50:46,333   INFO  [ZooKeeperServer] ZK-SERVER: Established session 0x1be30eecd1000000 with negotiated timeout 6000 for client /127.0.0.1:60158
+2015-08-04 12:50:46,518   INFO  [Socket Joiner] HOST: Attempting to bind to internal ip 0.0.0.0/0.0.0.0:3021
+2015-08-04 12:50:46,568   INFO  [main] HOST: Host id of this node is: 0
+2015-08-04 12:50:46,568   INFO  [main] CONSOLE: Host id of this node is: 0
+2015-08-04 12:50:47,447   INFO  [main] HOST: URL of deployment: deployment.xml
+2015-08-04 12:50:47,569   INFO  [main] HOST: Dead host timeout set to 90000 milliseconds
+2015-08-04 12:50:47,632   INFO  [main] HOST: Elastic duration set to 50 milliseconds
+2015-08-04 12:50:47,632   INFO  [main] HOST: Elastic throughput set to 2 mb/s
+2015-08-04 12:50:47,632   INFO  [main] HOST: Max temptable size set to 100 mb
+2015-08-04 12:50:47,632   INFO  [main] HOST: Snapshot priority set to 6 [0 - 10]
+2015-08-04 12:50:51,521   INFO  [main] CONSOLE: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+2015-08-04 12:50:51,537   INFO  [main] CONSOLE: Build: 5.4 voltdb-5.4-0-g4a2c380-local Enterprise Edition
+2015-08-04 12:50:51,538   INFO  [main] HOST: Command line arguments: org.voltdb.VoltDB create deployment deployment.xml host localhost:3021 port 2323 adminport 2222 httpport 8081 internalport 4021 replicationport 6666 zkport 5454
+2015-08-04 12:50:51,541   INFO  [main] HOST: Command line JVM arguments: -Xmx2048m -Djava.awt.headless=true -Dsun.net.inetaddr.ttl=300 -Dsun.net.inetaddr.negative.ttl=3600 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:+UseTLAB -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCondCardMark -Dsun.rmi.dgc.server.gcInterval=9223372036854775807 -Dsun.rmi.dgc.client.gcInterval=9223372036854775807 -XX:CMSWaitDuration=120000 -XX:CMSMaxAbortablePrecleanTime=120000 -XX:+ExplicitGCInvokesConcurrent -XX:+CMSScavengeBeforeRemark -XX:+CMSClassUnloadingEnabled -XX:PermSize=64m -Dlog4j.configuration=file:///home/voltdb/voltdb-ent-5.4/voltdb/log4j.xml -Djava.library.path=dummyvalue
+2015-08-04 12:50:51,542   INFO  [main] HOST: Command line JVM classpath: /home/voltdb/voltdb-ent-5.4/voltdb/voltdb-5.4.jar:/home/voltdb/voltdb-ent-5.4/lib/protobuf-java-2.5.0.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-lang3-3.0.jar:/home/voltdb/voltdb-ent-5.4/lib/super-csv-2.1.0.jar:/home/voltdb/voltdb-ent-5.4/lib/avro-1.7.7.jar:/home/voltdb/voltdb-ent-5.4/lib/jsch-0.1.51.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-http-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-server-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/httpcore-4.3.2.jar:/home/voltdb/voltdb-ent-5.4/lib/metrics-core-2.2.0.jar:/home/voltdb/voltdb-ent-5.4/lib/httpcore-nio-4.3.2.jar:/home/voltdb/voltdb-ent-5.4/lib/groovy-all-2.1.7-indy.jar:/home/voltdb/voltdb-ent-5.4/lib/slf4j-nop-1.6.2.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-util-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/servlet-api-2.5.jar:/home/voltdb/voltdb-ent-5.4/lib/httpclient-4.3.2.jar:/home/voltdb/voltdb-ent-5.4/lib/snappy-java-1.1.0.1.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-cli-1.2.jar:/home/voltdb/voltdb-ent-5.4/lib/scala-library.jar:/home/voltdb/voltdb-ent-5.4/lib/felix.jar:/home/voltdb/voltdb-ent-5.4/lib/httpasyncclient-4.0.1.jar:/home/voltdb/voltdb-ent-5.4/lib/kafka_2.8.0-0.8.1.jar:/home/voltdb/voltdb-ent-5.4/lib/jackson-core-asl-1.9.13.jar:/home/voltdb/voltdb-ent-5.4/lib/log4j-1.2.16.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-io-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/jna.jar:/home/voltdb/voltdb-ent-5.4/lib/slf4j-api-1.6.2.jar:/home/voltdb/voltdb-ent-5.4/lib/tomcat-jdbc.jar:/home/voltdb/voltdb-ent-5.4/lib/jackson-mapper-asl-1.9.13.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-logging-1.1.3.jar:/home/voltdb/voltdb-ent-5.4/lib/jetty-continuation-7.6.1.v20120215.jar:/home/voltdb/voltdb-ent-5.4/lib/commons-codec-1.6.jar:/home/voltdb/voltdb-ent-5.4/lib/tomcat-juli.jar:/home/voltdb/voltdb-ent-5.4/lib/jline-2.10.jar:/home/voltdb/voltdb-ent-5.4/lib/extension/voltdb-rabbitmq.jar
+2015-08-04 12:50:51,556   INFO  [main] NETWORK: Default network thread count: 2
+2015-08-04 12:50:51,596   INFO  [main] HOST: Beginning inter-node communication on port 4021.
+2015-08-04 12:50:51,597   INFO  [main] HOST: Attempting to bind to leader ip localhost/127.0.0.1:3021
+2015-08-04 12:50:51,627   INFO  [main] CONSOLE: Connecting to the VoltDB cluster leader localhost/127.0.0.1:3021
+2015-08-04 12:50:51,641   INFO  [Socket Joiner] JOINER: {
+  "port": 4021,
+  "type": "REQUEST_HOSTID",
+  "versionString": "5.4"
+}
+2015-08-04 12:50:51,641   INFO  [Socket Joiner] HOST: Received request type REQUEST_HOSTID
+2015-08-04 12:50:51,654   INFO  [main] JOINER: Leader provided address 127.0.0.1:3021
+2015-08-04 12:50:51,654   INFO  [main] HOST: Clock skew to across all nodes in the cluster is 3
+2015-08-04 12:50:51,663   INFO  [main] NETWORK: 1 notified of host 0
+2015-08-04 12:50:51,701   INFO  [ZooKeeperServer] REJOIN: Joining site 1:-1 known  active sites 0:-1, 1:-1
+2015-08-04 12:50:51,779   INFO  [main] ZK-SERVER: binding to port /127.0.0.1:5454
+2015-08-04 12:50:51,797   INFO  [main] ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+2015-08-04 12:50:51,818   INFO  [ZooKeeperServer] REJOIN: Shipping ZK snapshot from 0:-1 to 1:-1
+2015-08-04 12:50:52,033   INFO  [ZooKeeperServer] AGREEMENT: Loaded ZK snapshot
+2015-08-04 12:50:52,095   INFO  [main] ZK-SERVER: Initiating client connection, connectString=127.0.0.1:5454 sessionTimeout=2000 watcher=org.voltcore.zk.ZKUtil$1@68dc2bbe
+2015-08-04 12:50:52,113   INFO  [main-SendThread()] ZK-CLIENT: Opening socket connection to server /127.0.0.1:5454
+2015-08-04 12:50:52,116   INFO  [main-SendThread(localhost:5454)] ZK-CLIENT: Socket connection established to /127.0.0.1:5454, initiating session
+2015-08-04 12:50:52,116   INFO  [NIOServerCxn.Factory:/127.0.0.1:5454] ZK-SERVER: Accepted socket connection from /127.0.0.1:45380
+2015-08-04 12:50:52,118   INFO  [NIOServerCxn.Factory:/127.0.0.1:5454] ZK-SERVER: Client attempting to establish new session at /127.0.0.1:45380
+2015-08-04 12:50:52,145   INFO  [ZooKeeperServer] ZK-SERVER: Established session 0x1be30ef82b800001 with negotiated timeout 6000 for client /127.0.0.1:45380
+2015-08-04 12:50:52,145   INFO  [main-SendThread(localhost:5454)] ZK-CLIENT: Session establishment complete on server /127.0.0.1:5454, sessionid = 0x1be30ef82b800001, negotiated timeout = 6000
+2015-08-04 12:50:52,193   INFO  [Socket Joiner] HOST: Attempting to bind to internal ip 0.0.0.0/0.0.0.0:4021
+2015-08-04 12:50:52,222   INFO  [main] HOST: Host id of this node is: 1
+2015-08-04 12:50:52,223   INFO  [main] CONSOLE: Host id of this node is: 1
+2015-08-04 12:50:52,681   INFO  [main] HOST: Searching for license file located /home/voltdb/voltdb-ent-5.4/voltdb/license.xml
+2015-08-04 12:50:52,746   INFO  [Leader elector-/db/leaders/globalservice] HOST: Host 0 promoted to be the global service provider
+2015-08-04 12:50:53,308   INFO  [main] HOST: Deployment configuration pulled from other cluster node.
+2015-08-04 12:50:53,372   INFO  [main] HOST: Dead host timeout set to 90000 milliseconds
+2015-08-04 12:50:53,396   INFO  [main] HOST: Elastic duration set to 50 milliseconds
+2015-08-04 12:50:53,396   INFO  [main] HOST: Elastic throughput set to 2 mb/s
+2015-08-04 12:50:53,396   INFO  [main] HOST: Max temptable size set to 100 mb
+2015-08-04 12:50:53,396   INFO  [main] HOST: Snapshot priority set to 6 [0 - 10]
+2015-08-04 12:50:54,629   INFO  [main] LOGGING: Path voltdbroot/command_log/segments does not exist
+2015-08-04 12:50:54,629   INFO  [main] LOGGING: No command log to replay on this host
+2015-08-04 12:50:54,772   INFO  [main] HOST: Searching for license file located /home/voltdb/voltdb-ent-5.4/voltdb/license.xml
+2015-08-04 12:50:56,273   INFO  [main] LOGGING: Path voltdbroot/command_log/segments does not exist
+2015-08-04 12:50:56,273   INFO  [main] LOGGING: No command log to replay on this host
+2015-08-04 12:50:56,744   INFO  [main] CONSOLE: Starting VoltDB with trial license. License expires on Aug 24, 2015.
+2015-08-04 12:51:04,124   INFO  [main] EXPORT: System is not using any export functionality.
+2015-08-04 12:51:04,219   INFO  [main] EXPORT: System is not using any export functionality.
+2015-08-04 12:51:04,323   INFO  [main] IMPORT: No importers specified skipping Streaming Import initialization.
+2015-08-04 12:51:04,355   INFO  [main] IMPORT: No importers specified skipping Streaming Import initialization.
+2015-08-04 12:51:14,037   INFO  [Estimated Time Updater] HOST: 8065 estimated time update.
+2015-08-04 12:51:14,406   INFO  [Estimated Time Updater] HOST: 7774 estimated time update.
+2015-08-04 12:51:16,252   INFO  [SSM Daemon] DR: SMI PER_HOST_DR_STATES/DR_PRODUCER_STATES/Host_0: Initialized (first member) with State DR_DISABLED to -1/-1
+2015-08-04 12:51:22,077   INFO  [main] CONSOLE: Initializing the database and command logs. This may take a moment...
+2015-08-04 12:51:44,009   WARN  [ZooKeeperServer] HOST: Have not received a message from host localhost for 14.813 seconds
+2015-08-04 12:51:44,392   WARN  [ZooKeeperServer] HOST: Have not received a message from host localhost for 16.589 seconds
+2015-08-04 12:51:44,597   INFO  [SSM Daemon] DR: SMI PER_HOST_DR_STATES/DR_PRODUCER_STATES/Host_1: Initialized (existing) with State DR_DISABLED to -1/-1
+2015-08-04 12:51:44,679   INFO  [Iv2ExecutionSite: 0:0] HOST: Loading native VoltDB code (voltdb-5.4). A confirmation message will follow if the loading is successful.
+2015-08-04 12:51:44,970   INFO  [main] TM: Setting maximum size of MPI read pool to: 20
+2015-08-04 12:51:44,978   INFO  [main] CONSOLE: Initializing the database and command logs. This may take a moment...
+2015-08-04 12:51:45,784   INFO  [LeaderAppointer-Babysitters] TM: Waiting on 1 more nodes for k-safety before startup
+2015-08-04 12:51:45,885   INFO  [LeaderAppointer-Babysitters] TM: Waiting on 1 more nodes for k-safety before startup
+2015-08-04 12:51:46,722   INFO  [Iv2ExecutionSite: 1:0] HOST: Loading native VoltDB code (voltdb-5.4). A confirmation message will follow if the loading is successful.
+2015-08-04 12:51:46,757   INFO  [LeaderAppointer-Babysitters] TM: Appointing HSId 0:0 as leader for partition 0
+2015-08-04 12:51:48,305   INFO  [LeaderCache] TM: SP 0:0 for partition 0 found (including self) 2 surviving replicas to repair.  Survivors: 0:0, 1:0
+2015-08-04 12:51:56,882   INFO  [Iv2ExecutionSite: 0:0] HOST: Successfully loaded native VoltDB library voltdb-5.4.
+2015-08-04 12:51:57,007   INFO  [LeaderAppointer-Babysitters] TM: Appointing HSId 1:1 as leader for partition 1
+2015-08-04 12:51:57,243   INFO  [main] TM: Setting maximum size of MPI read pool to: 20
+2015-08-04 12:51:57,588   INFO  [LeaderCache] TM: SP 1:1 for partition 1 found (including self) 2 surviving replicas to repair.  Survivors: 0:1, 1:1
+2015-08-04 12:52:12,566   INFO  [Iv2ExecutionSite: 1:0] HOST: Successfully loaded native VoltDB library voltdb-5.4.
+2015-08-04 12:52:15,537   INFO  [Estimated Time Updater] HOST: 14931 estimated time update.
+2015-08-04 12:52:16,396   INFO  [Estimated Time Updater] HOST: 3666 estimated time update.
+2015-08-04 12:52:23,736   INFO  [LeaderCache] TM: SP 0:0 for partition 0 finished leader promotion. Took 36934 ms.
+2015-08-04 12:52:23,744   INFO  [LeaderCache] EXPORT: ExportManager accepting mastership for partition 0
+2015-08-04 12:52:23,796   INFO  [LeaderCache] TM: SP 1:1 for partition 1 finished leader promotion. Took 26384 ms.
+2015-08-04 12:52:23,808   INFO  [LeaderCache] EXPORT: ExportManager accepting mastership for partition 1
+2015-08-04 12:52:23,864   INFO  [LeaderCache] TM: MP 0:2 for partition 16383 found 2 surviving leaders to repair.  Survivors: 0:0, 1:1
+2015-08-04 12:52:23,867   INFO  [LeaderCache] TM: MP 0:2 for partition 16383 finished leader promotion. Took 34 ms.
+2015-08-04 12:52:23,982   ERROR [main] HOST: JMX service unable to bind to port 9090
+2015-08-04 12:52:24,183   INFO  [main] HOST: Database start action is Create.
+2015-08-04 12:52:24,193   INFO  [main] HOST: Database start action is Create.
+2015-08-04 12:52:25,384   INFO  [Periodic Priority Work] GC: GC for ConcurrentMarkSweep: 1967 ms for 3 collections, 20733688 used; max is 2130051072
+2015-08-04 12:52:25,490   INFO  [Periodic Priority Work] GC: GC for ConcurrentMarkSweep: 436 ms for 2 collections, 17025912 used; max is 2130051072
+2015-08-04 12:52:26,080   INFO  [main] HOST: PID of this Volt process is 3045
+2015-08-04 12:52:26,080   INFO  [main] HOST: Listening for native wire protocol clients on port 21212.
+2015-08-04 12:52:26,080   INFO  [main] HOST: Listening for admin wire protocol clients on port 21211.
+2015-08-04 12:52:26,080   INFO  [main] HOST: Local machine HTTP monitoring is listening on port 8080.
+2015-08-04 12:52:26,081   INFO  [main] HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+2015-08-04 12:52:26,081   INFO  [main] HOST: Maximum usable Java heap set to 2031 mb.
+2015-08-04 12:52:26,081   INFO  [main] HOST: Minimum required Java heap for catalog and server config is 640 MB.
+2015-08-04 12:52:26,082   INFO  [main] HOST: Cluster has 2 hosts with leader hostname: "localhost:3021". 2 sites per host. K = 1.
+2015-08-04 12:52:26,082   INFO  [main] HOST: The entire cluster has 2 copies of each of the 2 logical partitions.
+2015-08-04 12:52:26,082   INFO  [main] HOST: Detection of network partitions in the cluster is enabled.
+2015-08-04 12:52:26,082   INFO  [main] HOST: Client authentication is not enabled. Anonymous clients accepted.
+2015-08-04 12:52:26,082   INFO  [main] HOST: No schedule set for automated snapshots.
+2015-08-04 12:52:26,082   INFO  [main] HOST: Using "voltdbroot" for voltdbroot directory.
+2015-08-04 12:52:26,083   INFO  [main] HOST: CPU INFO:         2 Cores, 2 Sockets, 2 Hardware Threads
+2015-08-04 12:52:26,083   INFO  [main] HOST: CPU DESC:         Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz 4096 KB cache
+2015-08-04 12:52:26,114   INFO  [main] HOST: HOST MEMORY (MB): 1994
+2015-08-04 12:52:26,114   INFO  [main] HOST: OS PROFILE:       Linux 3.13.0-40-generic amd64 en_US
+2015-08-04 12:52:26,115   INFO  [main] HOST: JAVA VERSION:     1.7.0_79
+2015-08-04 12:52:26,115   INFO  [main] HOST: JAVA RUNTIME:     OpenJDK Runtime Environment (1.7.0_79-b14)
+2015-08-04 12:52:26,115   INFO  [main] HOST: JAVA VM:          OpenJDK 64-Bit Server VM (24.79-b02, mixed mode)
+2015-08-04 12:52:26,115   INFO  [main] HOST: The internal DR cluster timestamp is Tue Aug 04 12:50:46 GMT+00:00 2015.
+2015-08-04 12:52:26,181   INFO  [main] HOST: PID of this Volt process is 3071
+2015-08-04 12:52:26,182   INFO  [main] HOST: Listening for native wire protocol clients on port 2323.
+2015-08-04 12:52:26,182   INFO  [main] HOST: Listening for admin wire protocol clients on port 2222.
+2015-08-04 12:52:26,182   INFO  [main] HOST: Local machine HTTP monitoring is listening on port 8081.
+2015-08-04 12:52:26,182   INFO  [main] HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8081.
+2015-08-04 12:52:26,182   INFO  [main] HOST: Maximum usable Java heap set to 2031 mb.
+2015-08-04 12:52:26,182   INFO  [main] HOST: Minimum required Java heap for catalog and server config is 640 MB.
+2015-08-04 12:52:26,183   INFO  [main] HOST: Cluster has 2 hosts with leader hostname: "localhost:3021". 2 sites per host. K = 1.
+2015-08-04 12:52:26,183   INFO  [main] HOST: The entire cluster has 2 copies of each of the 2 logical partitions.
+2015-08-04 12:52:26,183   INFO  [main] HOST: Detection of network partitions in the cluster is enabled.
+2015-08-04 12:52:26,184   INFO  [main] HOST: Client authentication is not enabled. Anonymous clients accepted.
+2015-08-04 12:52:26,184   INFO  [main] HOST: No schedule set for automated snapshots.
+2015-08-04 12:52:26,184   INFO  [main] HOST: Using "voltdbroot" for voltdbroot directory.
+2015-08-04 12:52:26,209   INFO  [main] HOST: CPU INFO:         2 Cores, 2 Sockets, 2 Hardware Threads
+2015-08-04 12:52:26,209   INFO  [main] HOST: CPU DESC:         Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz 4096 KB cache
+2015-08-04 12:52:26,209   INFO  [main] HOST: HOST MEMORY (MB): 1994
+2015-08-04 12:52:26,209   INFO  [main] HOST: OS PROFILE:       Linux 3.13.0-40-generic amd64 en_US
+2015-08-04 12:52:26,209   INFO  [main] HOST: JAVA VERSION:     1.7.0_79
+2015-08-04 12:52:26,209   INFO  [main] HOST: JAVA RUNTIME:     OpenJDK Runtime Environment (1.7.0_79-b14)
+2015-08-04 12:52:26,209   INFO  [main] HOST: JAVA VM:          OpenJDK 64-Bit Server VM (24.79-b02, mixed mode)
+2015-08-04 12:52:26,304   INFO  [main] HOST: The internal DR cluster timestamp is Tue Aug 04 12:50:46 GMT+00:00 2015.
+2015-08-04 12:52:26,314   INFO  [main] HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port,admin-port,http-port
+2015-08-04 12:52:26,314   INFO  [main] HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port,admin-port,http-port
+2015-08-04 12:52:26,315   INFO  [main] HOST:   Host id: 0 with interfaces: 192.168.195.132 21212,21211,8080 [PEER]
+2015-08-04 12:52:26,315   INFO  [main] HOST:   Host id: 1 with interfaces: 192.168.195.132 2323,2222,8081 [PEER]
+2015-08-04 12:52:26,315   INFO  [main] HOST:   Host id: 1 with interfaces: 192.168.195.132 2323,2222,8081 [SELF]
+2015-08-04 12:52:26,316   INFO  [main] HOST:   Host id: 0 with interfaces: 192.168.195.132 21212,21211,8080 [SELF]
+2015-08-04 12:52:26,444   INFO  [SnapshotDaemon] LOGGING: This node was selected as the leader for snapshot truncation
+2015-08-04 12:52:26,459   INFO  [SnapshotDaemon] LOGGING: Checking for existence of snapshot truncation request
+2015-08-04 12:52:26,607   INFO  [Leader elector-/db/leaders/elasticjoincoordinator] JOIN: This node is promoted as the leader of elastic join coordinators
+2015-08-04 12:52:26,727   INFO  [Thread-8] HOST: Logging config info
+2015-08-04 12:52:26,730   INFO  [Thread-9] HOST: Logging config info
+2015-08-04 12:52:27,591   INFO  [SnapshotDaemon] LOGGING: Scheduling truncation request processing 10 seconds from now
+2015-08-04 12:52:37,592   INFO  [SnapshotDaemon] LOGGING: Snapshot truncation leader received snapshot truncation request
+2015-08-04 12:52:37,609   INFO  [SnapshotDaemon] LOGGING: Initiating @SnapshotSave for log truncation
+2015-08-04 12:52:37,670   INFO  [Iv2ExecutionSite: 0:2] SNAPSHOT: Asynchronously saving database to path: voltdbroot/command_log_snapshot, ID: 1438692757594 at 1438692757669
+2015-08-04 12:52:37,825   INFO  [Iv2ExecutionSite: 0:2] SNAPSHOT: Snapshot initiation took 155 milliseconds
+2015-08-04 12:52:37,833   INFO  [SnapshotDaemon] LOGGING: Snapshot initiation for log truncation was successful
+2015-08-04 12:52:37,856   INFO  [SnapshotDaemon] LOGGING: Checking for existence of snapshot truncation request
+2015-08-04 12:52:38,190   INFO  [SnapshotDaemon] LOGGING: Snapshot daemon grooming truncation snapshots
+2015-08-04 12:52:38,190   INFO  [SnapshotDaemon] LOGGING: Found most recent successful snapshot txnid 3619631923232767 path voltdbroot/command_log_snapshot nonce 1438692757594
+2015-08-04 12:52:38,191   INFO  [SnapshotDaemon] LOGGING: Snapshot daemon grooming truncation snapshots
+2015-08-04 12:52:38,191   INFO  [SnapshotDaemon] LOGGING: Found most recent successful snapshot txnid 3619631923232767 path voltdbroot/command_log_snapshot nonce 1438692757594
+2015-08-04 12:52:39,238   INFO  [SnapshotCompletionMonitor] LOGGING: The log segment pool is being grown from 0 to 1 segments with a segment size of 128 megabytes
+2015-08-04 12:52:39,241   INFO  [SnapshotCompletionMonitor] LOGGING: The log segment pool is being grown from 0 to 1 segments with a segment size of 128 megabytes
+2015-08-04 12:52:46,185   INFO  [SnapshotCompletionMonitor] LOGGING: Finished adding segment in 6946224 microseconds
+2015-08-04 12:52:46,227   INFO  [SnapshotCompletionMonitor] LOGGING: Asynchronous command logging is enabled.
+2015-08-04 12:52:46,227   INFO  [SnapshotCompletionMonitor] LOGGING: Command log will fsync on the first of 200ms or 2147483647 unsynced txns.
+2015-08-04 12:52:46,227   INFO  [SnapshotCompletionMonitor] LOGGING: 1 128mb command log segments stored at: voltdbroot/command_log
+2015-08-04 12:52:46,227   INFO  [SnapshotCompletionMonitor] LOGGING: Internal snapshot path: voltdbroot/command_log_snapshot
+2015-08-04 12:52:46,634   INFO  [Command Log IO] LOGGING: Loaned out log segment voltdbroot/command_log/segments/loaned.1 took 228315 microseconds
+2015-08-04 12:52:46,648   INFO  [Command Log Segment Allocator] LOGGING: Finished adding segment in 157044 microseconds
+2015-08-04 12:52:46,833   INFO  [SnapshotCompletionMonitor] LOGGING: Finished adding segment in 7588064 microseconds
+2015-08-04 12:52:46,847   INFO  [SnapshotCompletionMonitor] LOGGING: Asynchronous command logging is enabled.
+2015-08-04 12:52:46,847   INFO  [SnapshotCompletionMonitor] LOGGING: Command log will fsync on the first of 200ms or 2147483647 unsynced txns.
+2015-08-04 12:52:46,847   INFO  [SnapshotCompletionMonitor] LOGGING: 1 128mb command log segments stored at: voltdbroot/command_log
+2015-08-04 12:52:46,850   INFO  [SnapshotCompletionMonitor] LOGGING: Internal snapshot path: voltdbroot/command_log_snapshot
+2015-08-04 12:52:46,920   INFO  [Command Log IO] LOGGING: Loaned out log segment voltdbroot/command_log/segments/loaned.1 took 68046 microseconds
+2015-08-04 12:52:47,012   INFO  [Command Log Segment Allocator] LOGGING: Finished adding segment in 93258 microseconds
+2015-08-04 12:52:47,187   INFO  [SnapshotCompletionMonitor] CONSOLE: Server completed initialization.
+2015-08-04 12:52:47,188   INFO  [SnapshotCompletionMonitor] LOGGING: REBALANCE: Nothing to rebalance
+2015-08-04 12:52:47,188   INFO  [SnapshotCompletionMonitor] CONSOLE: Server completed initialization.
+2015-08-04 12:54:00,837   WARN  [Thread-0] CONSOLE: The VoltDB server will shut down due to a control-C or other JVM exit.
+2015-08-04 12:54:00,841   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,847   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,853   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,860   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,869   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,875   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,881   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,887   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,893   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,899   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,906   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,952   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,957   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,968   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,975   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,980   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,987   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,992   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:00,998   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,006   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,017   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,027   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,054   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,063   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,067   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,072   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,079   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,085   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,097   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,103   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,110   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,116   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,122   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,130   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,136   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,144   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,155   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,161   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,167   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,177   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,183   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,195   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,201   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,207   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,213   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,219   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,225   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,231   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,238   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,243   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,250   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,255   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,261   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,267   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,314   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,314   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,326   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,332   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,338   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,344   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,351   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,362   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,368   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,374   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,381   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,387   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,393   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,399   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,406   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,412   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,418   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,425   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,431   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,437   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,443   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,450   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,456   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,462   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,473   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,479   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,486   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,492   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,498   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,504   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,511   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,517   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,523   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,529   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,536   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,542   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,548   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,554   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,561   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,567   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,573   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,579   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,586   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,592   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,598   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,604   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,611   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,617   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,623   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,629   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,636   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,642   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,648   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,654   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,661   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,667   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,673   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,679   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,686   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,692   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,698   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,704   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,711   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,717   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,723   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,729   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,736   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,742   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,748   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,754   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,761   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,767   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,773   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,779   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,786   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,792   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,798   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,804   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,811   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,817   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,823   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,829   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,836   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,842   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,848   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,854   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:01,861   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:02,032   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:02,108   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 1:-1
+2015-08-04 12:54:02,112   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 0:-1
+2015-08-04 12:54:02,118   WARN  [ZooKeeperServer] org.voltdb.messaging.impl.HostMessenger: Attempted delivery of message to failed site: 0:-1
+2015-08-04 12:54:02,119   WARN  [Pico Network - org.voltcore.network.PicoNetwork@8b66f5d:localhost/127.0.0.1:3021] HOST: Received remote hangup from foreign host localhost
+2015-08-04 12:54:02,120   WARN  [Pico Network - org.voltcore.network.PicoNetwork@8b66f5d:localhost/127.0.0.1:3021] NETWORK: Host 0 failed
+2015-08-04 12:54:02,956   INFO  [ZooKeeperServer] REJOIN: Agreement, Processing FaultMessage {failed: 0:-1, reporting: 1:-1, witnessed: true}
+2015-08-04 12:54:03,604   INFO  [ZooKeeperServer] REJOIN: Agreement, Sending survivors SITE_FAILURE_UPDATE from site: 1:-1 survivors: [1:-1] failed: [0:-1]
+2015-08-04 12:54:03,970   INFO  [ZooKeeperServer] REJOIN: Agreement, Adding 0:-1 to failed sites history
+2015-08-04 12:54:03,971   INFO  [ZooKeeperServer] REJOIN: Agreement, handling site faults for newly failed sites 0:-1 initiatorSafeInitPoints {0:-1->2009467899109965824}
+2015-08-04 12:54:03,989   INFO  [ZooKeeperServer] ZK-SERVER: Initiating close of session 0x1be30eecd1000000
+2015-08-04 12:54:03,990   WARN  [ZooKeeperServer] NETWORK: Host 0 failed
+2015-08-04 12:54:03,997   INFO  [ZooKeeperServer] ZK-SERVER: Processed session termination for sessionid: 0x1be30eecd1000000
+2015-08-04 12:54:04,068   INFO  [Leader elector-/db/leaders/globalservice] HOST: Host 1 promoted to be the global service provider
+2015-08-04 12:54:04,179   INFO  [LeaderAppointer-Babysitters] TM: LeaderAppointer repairing with master set: {0->0:0, 1->1:1}
+2015-08-04 12:54:04,425   INFO  [LeaderAppointer-Babysitters] TM: Partition detection triggered for 50/50 cluster failure. This survivor set is shutting down.
+2015-08-04 12:54:04,942   FATAL [LeaderAppointer-Babysitters] HOST: Use of command logging detected, no additional database snapshot will be generated.  Please use the 'recover' action to restore the database if necessary.
